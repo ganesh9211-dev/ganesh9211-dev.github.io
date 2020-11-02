@@ -32,5 +32,3 @@ navLinks.forEach(link => {
         });
     });
 });
-
-

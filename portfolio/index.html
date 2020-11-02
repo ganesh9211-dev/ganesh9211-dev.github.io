@@ -9,7 +9,11 @@
     <script src="https://kit.fontawesome.com/836a943e18.js"
             crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 
    
     
@@ -103,11 +107,16 @@
         </section>
         <section id="about" class="about">
             <div class="container">
-                <div class="about-img">
-                    <img src="images/profile-pic.jpg"
+<div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">             
+            <div class="about-img">
+                   <img src="images/profile-pic.jpg"
                          alt="Ganesh Narawade"
-                         class="about-pic" />
+                         class="about-pic img-fluid" />
                 </div>
+            </div>
+                <div class="col-lg-8 col-md-12 col-sm-12">             
+
                 <div class="about-text-box">
                     <h2>ABOUT ME </h2>
                     <p>
@@ -138,11 +147,15 @@
                     </p>
                 </div>
             </div>
+        </div>
+            </div>
             <hr />
         </section>
 
         <section id="services" class="services">
-            <div class="container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="title-heading">
 
                     <h2>MY SKILLS</h2>
@@ -151,154 +164,189 @@
                         creative designs
                     </p>
                 </div>
+                </div></div>
 
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="skills">
 
-                <div class="skills">
-
-                    <ul>
-                    <li>
-                        <h3>HTML5</h3><span class="bar"><span class="html5"></span></span>
-                    </li>
-
-                    <li>
-                        <h3>CSS3</h3><span class="bar"><span class="css"></span></span>
-                    </li>
-
-                    <li>
-                        <h3>JAVASCRIPT</h3><span class="bar"><span class="javascript"></span></span>
-                    </li>
-
-                    <li>
-                        <h3>REACT</h3><span class="bar"><span class="react"></span></span>
-                    </li>
-
-                    <li>
-                        <h3>c#</h3><span class="bar"><span class="c"></span></span>
-                    </li>
-
-                    <li>
-                        <h3>MVC</h3><span class="bar"><span class="mvc"></span></span>
-                    </li>
-
-                    <li>
-                        <h3>SQL</h3><span class="bar"><span class="sql"></span></span>
-                    </li>
-
-                    </ul>
-
-
-                                   
-
-                <div class="service-tiers">
-
-
-                    <div class="tier-item">
-                        <i class="fa fa-code" aria-hidden="true"></i>
-                        <h2>FRONT END</h2>
-                        <p>
-                            HTML5 | CSS3 | JavaScript(ES6) | React.Js | Bootstrap | Json | Ajax| JQuery
-                        </p>
+                            <ul>
+                            <li><h3>HTML5</h3><span class="bar"><span class="html5"></span></span></li>
+                              <li><h3>CSS3</h3><span class="bar"><span class="css"></span></span></li>
+        
+                            <li><h3>JAVASCRIPT</h3><span class="bar"><span class="javascript"></span></span></li>
+        
+                            <li><h3>REACT</h3><span class="bar"><span class="react"></span></span></li>
+        
+                            <li><h3>C#</h3><span class="bar"><span class="c"></span></span>
+                            </li>
+        
+                            <li><h3>MVC</h3><span class="bar"><span class="mvc"></span></span>
+                            </li>
+        
+                            <li>
+                                <h3>SQL</h3><span class="bar"><span class="sql"></span></span>
+                            </li>
+        
+                            </ul>
+        
+        
+                        </div>       
+        
                     </div>
-                    <div class="tier-item">
-                        <i class="fa fa-mobile" aria-hidden="true"></i>
-                        <h2>BACK-END TECHNOLOGIES,DATABASES & CLOUD</h2>
-                        <p>
-                            Node.js | JavaScript(ES6) | JSON | MS SQL Server | AWS (Basics) | Azure | Firebase
-                        </p>
-                    </div>
-                    <div class="tier-item">
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <h2>WEB TOOLS & VERSION CONTROL</h2>
-                        <p>
-                           Git | GitHub |  Visual Studio | Code Pen | Figma | Sublime Text
-                        </p>
-                    </div>
-                    
                 </div>
+
             </div>
             <hr />
         </section>
+
+<section id="mainskills" class="mainskills">
+
+<div class="container">
+    <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="service-tiers">
+                    <div class="tier-item">
+                    <i class="fa fa-code faIcon" aria-hidden="true"></i>
+                    <h2>FRONT END</h2>
+                    <p>
+                        HTML5 | CSS3 | JavaScript(ES6) | React.Js | Bootstrap | Json | Ajax| JQuery
+                    </p>
+                </div>
+                </div>    
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="service-tiers">
+                    <div class="tier-item">
+                    <i class="fa fa-mobile faIcon" aria-hidden="true"></i>
+                    <h2>BACK-END DATABASES & CLOUD</h2>
+                    <p>
+                        Node.js | JavaScript(ES6) | JSON | MS SQL Server | AWS (Basics) | Azure | Firebase
+                    </p>
+                </div></div>
+                </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="service-tiers">
+                    <div class="tier-item">
+                    <i class="fa fa-file-code-o faIcon" aria-hidden="true"></i>
+                    <h2>WEB TOOLS & VERSION CONTROL</h2>
+                    <p>
+                       Git | GitHub |  Visual Studio | Code Pen | Figma | Sublime Text
+                    </p>
+                </div>
+                </div>        
+            </div>
+
+
+            
+        </div>
+  </div>
+  
+</section>
         <section id="projects" class="projects">
-            <div class="title-heading">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">       
+             <div class="title-heading">
                 <h2>PROJECTS</h2>
                 <p>These are some of my recent projects</p>
             </div>
-            <div class="project-item">
-                <div class="project-img has-margin-right">
-                    <img src="images/ravenous.jpg" />
+        </div>
+    </div>
+      
+    <div class="row project">
+            <div class="col-lg-6 col-md-12 col-sm-12" id="projecttop">       
+                <div class="project-item">
+                   <div class="project-img has-margin-right">
+                    <img src="images/ravenous.jpg" class="img-fluid" width="100%"/>
+                   </div>
                 </div>
-                <div class="project-description">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12" id="projectbottom">       
+               <div class="project-description">
                     <h2>Ravenous Project</h2>
-                    <p>
-                        • This is a react based website called “Ravenous”, a Yelp-like clone.
-                        <br /> • With the help of ravenous ,user can view a list of restaurants returned by
-                        the Yelp API.
-                        <br /> • User also get to sort through restaurants by using filter
-                        which shows 3 options
-                        (Best Match,Highest Rated & Most Reviewed)
-                        <br/>• Hosted on firebase 
-
-
-                    </p>
-                    <div class="cta">
+                     <ul>
+                        <li>This is a react based website called “Ravenous”, a Yelp-like clone.</li>
+                        <li>With the help of ravenous ,user can view a list of restaurants returned by
+                            the Yelp API.</li>
+                        <li>User also get to sort through restaurants by using filter
+                            which shows 3 options (Best Match,Highest Rated & Most Reviewed)</li>
+                        <li>Hosted on firebase</li>
+                    </ul>
+                    <div class="">
                     <a href="https://github.com/ganesh9211-dev/ravenous" class="project-link" target="_blank"><i class="fa fa-github" aria-hidden="true"> View Code</i></a>
-
-                    <a href="https://ravenous-888d9.web.app/" target="_blank" class="btn">Visit </a>
-                    
+                    <a href="https://ravenous-888d9.web.app/" target="_blank" class="visit">Visit </a>
                     </div>
                 </div>
             </div>
-
-
+        </div>
+ 
+<div class="row project">
+        <div class="col-lg-6 col-md-12 col-sm-12" id="projectbottom">       
             <div class="project-item">
                 <div class="project-description has-margin-right">
                     <h2>Riya's Laundry</h2>
-                    <p>
-                        • My first website creation.
-                        <br />• Created & designed just to practice html and css features to make something creative.
-                        <br />• Planning to implement more in future by making it responsive.
+                    <ul> 
+                        <li>My first website creation.</li>
+                        <li>Created & designed just to practice html and css features to make something creative.</li>
 
-
-                    </p>
-                    <div class="cta">
+                        <li>Planning to implement more in future by making it responsive.</li>
+                    </ul>
+                    <div class="">
                     <a href="https://github.com/ganesh9211-dev/Riya-s-Laundry" class="project-link" target="_blank"><i class="fa fa-github" aria-hidden="true"> View Code</i></a>
-                         <a href="https://ganesh9211-dev.github.io/Riyas%20Laundry/" target="_blank" class="btn">Visit </a>
+                         <a href="https://ganesh9211-dev.github.io/Riyas%20Laundry/" target="_blank" class="visit">Visit </a>
                     </div>
 
                 </div>
-
+            </div></div>
+            <div class="col-lg-6 col-md-12 col-sm-12"  id="projecttop">       
 
                 <div class="project-img">
-                    <img src="images/Riyas laundry.jpg" />
+                    <img src="images/Riyas laundry.jpg"  class="img-fluid" width="100%" />
                 </div>
+            </div></div>
+<div class="row project">
+                <div class="col-lg-6 col-md-12 col-sm-12" id="projecttop">       
+                    <div class="project-item">
+                       <div class="project-img has-margin-right">
+                        <img src="images/Keys.jpg"  class="img-fluid" width="100%"/>
+                            </div></div></div>
+            
+                            <div class="col-lg-6 col-md-12 col-sm-12"  id="projectbottom">       
+            
+                            <div class="project-description">
+                                <h2>Talent Project-Onboarding</h2>
+                                <p>
+                                    <ul>
+                                        <li>MVC application that enables the CRUD(Create, Update, Delete) operations.</li>
+                                        <li>MVC application connected to an SQL database</li>
+                                        <li>React JS front-end, Semantic UI React</li>
+                                        <li>Entity Framework, Data annotations</li>
+                                    </ul>
+            
+                                </p>
+                                 <div class="cta">
+                                <a href="https://github.com/ganesh9211-dev/Talent-Project" class="project-link" target="_blank"><i class="fa fa-github" aria-hidden="true"> View Code</i></a>
+                                     <a href="#contact" class="btn">coming soon </a>
+                                    </div>
+            
+                            </div>
             </div>
-
-            <div class="project-item">
-                <div class="project-img has-margin-right">
-                    <img src="images/todo.jpg" />
-                </div>
-                <div class="project-description">
-                    <h2>To Do List App</h2>
-                    <p>
-                        •	Hosted online on firebase (Real-Time database)
-                        <br />• Web application with full CRUD functionality.
-                        <br />•	Material-UI for the design (front-end)
-                        <br />•	Used React Hooks
-
-
-                    </p>
-                     <div class="cta">
-                    <a href="https://github.com/ganesh9211-dev/To-Do-List-App" class="project-link" target="_blank"><i class="fa fa-github" aria-hidden="true"> View Code</i></a>
-                         <a href="https://todo-app-c66dc.web.app/" target="_blank" class="btn">Visit </a>
-                        </div>
-
-                </div>
             </div>
+            
+</div>
+
+            
             <hr />
         </section>
 
         <section id="contact" class="contact">
-            <h2>Get In Touch</h2>
+
+<div class="container">
+    <div class="row">    
+        <h2 style="text-align: center;">Get In Touch</h2>
+        <div class="col-lg-12 col-md-12 col-sm-12">    
 
 
             <div class="main-container">
@@ -317,33 +365,40 @@
                     <input id="submit-btn" type="submit" value="Send">
                 </form>
             </div>
+        </div>
 
 
+            <div class="row ">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <p class="icons">
+                        <a href="mailto:ganesh9211@hotmail.com"><i class="fas fa-envelope-open"></i> ganesh9211@hotmail.com</a>
+                    </p>
+                </div>
 
-            <div class="container">
-                <p>
-                    <a href="mailto:ganesh9211@hotmail.com"><i class="fas fa-envelope-open"></i> ganesh9211@hotmail.com</a>
-                </p>
-
-                <p>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                <p class="icons">
                     <a href="#"><i class="fas fa-mobile"></i> +64 210 24 585 01 </a>
                 </p>
+            </div>
 
-                <p>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <p class="icons">
                     <a href="https://github.com/ganesh9211-dev" target="_blank"><i class="fab fa-github"> Github</i></a>
                 </p>
 
-                <p>
+                <p class="icons">
                     <a href="https://www.linkedin.com/in/ganesh-narawade-4858741a/" target="_blank"><i class="fab fa-linkedin"> Linkedin</i></a>
                 </p>
 
 
-                <p>
+                <p class="icons">
                     <a href="https://www.facebook.com/gnarawade" target="_blank"><i class="fab fa-facebook"> Facebook</i></a>
                 </p>
-
+                </div>
             </div>
             <hr />
+        </div>
+        </div>
         </section>
         <footer>
             <div class="footer-nav">

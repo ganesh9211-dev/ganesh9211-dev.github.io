@@ -10,13 +10,13 @@
   box-sizing: inherit;
 }
 
-html {
+body {
     font-family: "Share Tech Mono", monospace;
     font-size: 12px;
     box-sizing: border-box;
     scroll-behavior: smooth;
     /*color: #e7e7e7;*/
-    background: #6465A5;
+    background: #91949d;
     /*#659DBD;*DARK BLUE /
     /*#E98074;*/
     /*my fav background: #252627;*/
@@ -34,6 +34,7 @@ a:hover {
 ul {
   list-style: none;
 }
+
 
 p {
   font-size: 1.4rem;
@@ -361,11 +362,16 @@ nav {
   min-height: 80vh;
 }
 
+.about-img {
+  padding : 20px 10px;
+margin-top: 70px;
+} 
+
+
 .about-img img {
-  height: 20rem;
-  width: auto;
+  height: auto;
+  width: 100%;
   border-radius: 50%;
-  margin: 3rem;
   box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);
 }
 
@@ -378,21 +384,25 @@ nav {
 .about-text-box h2 {
   font-size: 4rem;
   margin-bottom: 20px;
+padding : 10px;
 }
+.about-text-box h3 {
+  font-size: 1.5rem;
+  font-weight : bold;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  padding-left : 10px;
+}
+
 
 .about-text-box p {
   font-family: "Poppins", sans-serif;
-  font-size: 1.3rem;
-  padding: 0;
+  font-size: 1.4rem;
+  padding : 0px 10px;
   margin-bottom: 1.45rem;
+  text-align: justify;
 }
 
-    .about-text-box h3 {
-        font-family: "Poppins", sans-serif;
-        font-size: 1.4rem;
-        padding: 0;
-
-    }
 
 
 
@@ -416,35 +426,35 @@ hr {
   min-height: 100vh;
   max-width: 90rem;
   margin: auto;
-  background:#333;
 }
 
 .title-heading {
   text-align: center;
-  margin-bottom: 5rem;
-   color:white;
+  margin-bottom: 1rem;
   
 }
 
 .title-heading h2 {
   font-size: 2rem;
   margin: 1.5rem 0 1rem 0;
+color : #3c3c3c;
+font-weight: bold;
 }
 
 .title-heading p {
   font-family: "Poppins", sans-serif;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color : #3c3c3c;
+}
+.skills ul li {
+  color : #3c3c3c;
 }
 
 .service-tiers {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.6rem;
+padding : 50px 0px;
 }
-
 .tier-item {
-  height: 30rem;
-  padding: 3rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -452,12 +462,11 @@ hr {
   cursor: default;
 }
 
-.tier-item i {
-  font-size: 3.5rem;
+.faIcon {
+  font-size:  40px;
 }
-
 .tier-item h2 {
-  font-size: 2rem;
+  font-size: 20px;
   margin: 2rem 0;
   background: linear-gradient(
     to right,
@@ -470,7 +479,8 @@ hr {
 
 .tier-item p {
   font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
+  font-size: 20px;
+  text-align: justify;
 }
 
 
@@ -620,22 +630,14 @@ hr {
 
 /* Projects */
 
-.projects {
-  padding: 3rem 0;
-  min-height: 100vh;
-  max-width: 100rem;
-  margin: auto;
-}
-
-.has-margin-right {
-  margin: 0 3rem 0 0;
+.project {
+padding : 50px 5px;
 }
 
 .project-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 1.45rem 5rem 1.45rem;
 }
 
 .project-img {
@@ -660,7 +662,9 @@ hr {
 
 .project-description p {
   font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
+  font-size: 20px;
+  text-indent: -30px;
+  text-align: justify;
 }
 
 .project-link {
@@ -680,22 +684,23 @@ hr {
 
 /*visit button*/
 
-.btn {
-  margin: 0 3px;
+.visit {
+  margin : 0 10px;
   background: rgb(3, 155, 155);
-  border-radius: 3rem;
+  border-radius: 50px;
   color: #fafafa;
-  padding: 2rem 2.5rem;
+  padding: 16px;
+  font-size:20px;
   display: inline-block;
-  margin-top: 2rem;
   transition: background-color 650ms;
   font-weight: 700;
   letter-spacing: 3px;
 }
 
-.btn:hover {
+.visit:hover {
   color: #fafafa;
   background-color: rgb(189, 72, 0);
+text-decoration: none;
 }
 
 
@@ -800,9 +805,15 @@ footer a {
   margin: 2rem 0;
 }
 
+
+.icons{
+font-size: 8px;
+
+}
+
 .footer-social a {
   margin: 0 0.5rem;
-  font-size: 2rem;
+  font-size: 0.5rem;
 }
 
 /* Responsive Design */
@@ -827,11 +838,7 @@ footer a {
   .project-item {
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem;
     box-shadow: 0 20px 30px 0 rgba(212, 255, 255, 0.15);
-  }
-  .project-img {
-    width: 20rem;
   }
 }
 
@@ -879,4 +886,21 @@ footer a {
   footer p {
     font-size: 1.2rem;
   }
+}
+
+@media only screen and (max-width :768px) {
+
+  .about-img {
+    padding : 20px 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  } 
+
+  #projecttop {
+    order: 1;
+  }
+  #projectbottom {
+    order: 2;
+  }
+
 }
